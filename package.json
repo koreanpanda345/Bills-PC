@@ -1,0 +1,33 @@
+{
+  "name": "bills-pc",
+  "version": "1.0.0",
+  "description": "A Pokemon Team Storage Discord Bot, and Other neat tools for Draft leagues, Competitive Play, and more",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cody Spratford",
+  "license": "MIT",
+  "dependencies": {
+    "@mattersmedia/html-to-article-json": "^1.22.0",
+    "@pkmn/data": "^0.1.1",
+    "@pkmn/dex": "^0.1.1",
+    "@pkmn/sets": "0.0.3",
+    "@smogon/calc": "^0.4.5",
+    "airtable": "^0.9.0",
+    "axios": "^0.20.0",
+    "chalk": "^4.1.0",
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0",
+    "moment": "^2.27.0",
+    "node-fetch": "^2.6.0",
+    "pokedex-promise-v2": "^3.2.0",
+    "tinyurl": "^1.1.7"
+  },
+  "devDependencies": {
+    "better-sqlite3": "^7.1.0",
+    "enmap": "^5.7.0",
+    "eslint": "^7.7.0"
+  }
+}
