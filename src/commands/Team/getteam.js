@@ -67,7 +67,6 @@ module.exports = class GetTeamCommand extends Command
 		if (team.team.send === "public")
 			message.channel.send(embed).then((msg) => 
 			{
-				message.delete();
 				msg.react("⏏️").then((r) => 
 				{
 					msg.react("❎");

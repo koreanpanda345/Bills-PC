@@ -56,7 +56,6 @@ module.exports = class EditTeamCommand extends Command
 			embed.setDescription(data.reason);
 			return message.channel.send(embed).then((msg) => 
 			{
-				message.delete();
 				msg.delete({timeout: 10000});
 			});
 		}
@@ -66,7 +65,6 @@ module.exports = class EditTeamCommand extends Command
       
 		message.channel.send(embed).then((msg) => 
 		{
-			message.delete();
 			msg.delete({timeout: 10000});
 		});
 	}

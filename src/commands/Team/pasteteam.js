@@ -42,7 +42,6 @@ module.exports = class PasteTeamCommand extends Command
 					embed.setTitle(m.content);
 					embed.setDescription("Enter your team paste.");
 					msg.edit(embed);
-					m.delete();
 					let team = message.channel.createMessageCollector(filter, {time: 600000, max: 1});
     
 					team.on("collect", async (m) => 
@@ -55,16 +54,12 @@ module.exports = class PasteTeamCommand extends Command
 							embed.setDescription(data.reason);
 							return msg.edit(embed).then((_msg) => 
 							{
-								message.delete();
 								msg.delete({timeout: 10000});
 							});
 						}
 						embed.setTitle(`PokePaste for ${_title}`);
 						embed.setURL(data.url);
-						msg.edit(embed).then((_msg) => 
-						{
-							message.delete();
-						});
+						msg.edit(embed);
 					});
 				});
 			});

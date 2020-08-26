@@ -66,7 +66,6 @@ module.exports = class AddTeamCommand extends Command
       
 		message.channel.send(embed).then((msg) => 
 		{
-			message.delete();
 			msg.delete({timeout: 10000});
 		});
 	}

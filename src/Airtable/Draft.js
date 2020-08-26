@@ -47,6 +47,7 @@ module.exports = class DraftTable
 				}
 			);
 		});
+		return result;
 	}
 
 	/**
